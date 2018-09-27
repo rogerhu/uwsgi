@@ -329,6 +329,7 @@ def build_uwsgi(uc, print_only=False, gcll=None):
         print(' '.join(cflags))
         sys.exit(0)
 
+    print("****HEY***" + str(os.environ))	
     if 'APPEND_CFLAGS' in os.environ:
         cflags += os.environ['APPEND_CFLAGS'].split()
 
